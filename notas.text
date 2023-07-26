@@ -1,0 +1,37 @@
+npm install ; para recuperar el archivo node_modules
+npm unistall node-sass ; para desinstalar sass
+npm install sass --save-dev ; para instalar sass
+npm run sass ; para mostrar la ubicacion del archivo node_modules
+npm run (nombre del script en package.jason) ; para mandar a llamar desde los scripts
+
+npm i -D gulp ; para instalar gulp
+npm run dev ; para correr gulp
+npx gulp dev ; para correr gulp
+
+
+- GULP FILE
+function tarea(callback) { -- nombre de la funcion (callback)
+    console.log("mi primer tarea");
+
+    callback(); -- se manda a llamar la funcion dentro de la funcion asi no da error en consola
+}
+
+exports.primerTarea = tarea; - npx gulp tarea : para mandar a llamar la funcion
+
+SINTAXIS ANTERIOR DE SASS
+@import 'ubicacion';
+
+NUEVA SINTAXIS en SASS
+@use 'nubicacion';
+
+MIXINS
+@mixin heading ($color: blue, $border-radius: false) {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: $color;
+    letter-spacing: 1px;
+
+  @if ($border-radius) {
+    border-radius: 1rem;      
+ }
+}
